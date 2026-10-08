@@ -53,7 +53,7 @@ class Song(models.Model):
         max_length=100,
         blank=True,
     )
-    duration = models.DurationField(
+    duration = models.PositiveIntegerField(
         default=0,
         help_text="Duration in seconds"
     )
